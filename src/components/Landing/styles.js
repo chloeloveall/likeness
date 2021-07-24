@@ -1,24 +1,16 @@
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
-import BlobSvg from '../../assets/images/blob.svg';
 
 export const GlobalStyle = createGlobalStyle`
-  body{
+  html{
     height: 100vh;
     font-family: 'Monda', sans-serif;
-    color: var(--secondary);
     background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
     background-attachment: fixed;
     bottom: 0;
     margin: 0;
+    color: #4e4e4e;
   }
-`;
-
-export const Blob = styled.div`
-  background-image: url(${BlobSvg});
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
 `;
 
 export const Button = styled.button`
@@ -45,6 +37,8 @@ export const Button = styled.button`
 
 export const Container = styled.div`
   margin: auto;
+  width: 80vw;
+  margin-top: 20px;
 `;
 
 export const Heading1 = styled.h1`
@@ -63,6 +57,8 @@ export const Likeness = styled.span`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;
+  transition: 0.5s;
+  background-size: 200% auto;
 `;
 
 export const TextContentContainer = styled.div`

@@ -13,12 +13,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const Container = styled.div`
-  margin: auto;
-  width: 80vw;
-  margin-top: 20px;
-`;
-
 export const Heading1 = styled.h1`
   font-size: 40px;
   font-family: 'Julius Sans One', sans-serif;

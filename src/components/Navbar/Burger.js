@@ -6,6 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Burger() {
   const [open, setOpen] = useState(false);
+  
   open ? disableBodyScroll(document.body) : enableBodyScroll(document.body);
 
   return (
@@ -16,7 +17,7 @@ export default function Burger() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         />}
-      <StyledBurger className='scrollSettings' open={open} onClick={() => setOpen(!open)}>
+      <StyledBurger open={open} onClick={() => setOpen(!open)}>
         <div className='burgerSection' />
         <div className='burgerSection'/>
         <div className='burgerSection'/>

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+// photo grid styles
 export const PhotoGridStyle = styled.div`
   --auto-grid-min-size: 13rem;
   margin: 20px auto;
@@ -18,7 +19,7 @@ export const ImageWrap = styled.div`
   cursor: pointer;
 	overflow: hidden;
   height: 0;
-  /* padding to create square image regardless of width */
+  ${'' /* padding to create square image regardless of width */}
   padding: 50% 0;
   position: relative;
   opacity: 0.8;
@@ -35,4 +36,15 @@ export const ImageWrap = styled.div`
 			transform: scale(1.15);
     }
   }
+`;
+
+// photo modal styles
+
+// photo upload styles
+
+// upload progress bar styles 
+export const StyledProgressBar = styled.div`
+  height: 5px;
+  background: #D6A4A4;
+  margin-top: 20px;
 `;

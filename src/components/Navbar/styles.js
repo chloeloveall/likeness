@@ -21,6 +21,7 @@ export const Heading1 = styled.h1`
   font-family: 'Julius Sans One', sans-serif;
   text-decoration: none;
   font-weight: bold;
+  justify-content: space-around;
 `;
 
 export const Likeness = styled.span`
@@ -37,6 +38,7 @@ export const Nav = styled.nav`
   width: 100%;
   height: 55px;
   max-width: 80vw;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   .logo {
@@ -84,8 +86,6 @@ export const Ul = styled.ul`
   flex-flow: row nowrap;
   li {
     padding: 18px;
-    ${'' /* margin-top: 50px; */}
-    ${'' /* padding-left: 10vw; */}
     margin: auto;
     text-align: center;
     display: flex;

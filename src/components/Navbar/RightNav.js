@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledIcon, Ul, StyledLink, StyledLink2 } from './styles';
-import { SignOut, User, House, PaperPlaneTilt } from "phosphor-react";
-import { Link } from 'react-router-dom';
+import { SignOut } from "phosphor-react";
+// import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 export default function RightNav({ open, setOpen }) {

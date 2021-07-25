@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+/* base styles */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// blob styles - workaround for styled component issue
+.blob1 {
+  margin: auto;
+  height: 90vh;
+  width: 90vh;
+  display: inline-block;
+  overflow: hidden;
+  background-image: url('./assets/images/blob1.svg');
+}

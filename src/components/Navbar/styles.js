@@ -36,24 +36,17 @@ export const Likeness = styled.span`
 export const Nav = styled.nav`
   width: 100%;
   height: 55px;
+  max-width: 80vw;
   display: flex;
   justify-content: space-between;
   .logo {
     padding-top: 20px;
     z-index: 30;
-    @media (max-width: 480px) {
-      position: fixed;
-      left: 20px;
-    }
   }
 `;
 
 // burger styles 
 export const StyledBurger = styled.div`
-  @media (max-width: 480px) {
-    position: fixed;
-    right: 20px;
-  }
   width: 2rem;
   height: 2rem;
   position: relative;

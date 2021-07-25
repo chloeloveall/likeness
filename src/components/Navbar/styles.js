@@ -34,9 +34,11 @@ export const Likeness = styled.span`
 `;
 
 export const Nav = styled.nav`
+  @media (max-width: 480px) {
+    position: fixed;
+  }
   width: 100%;
   height: 55px;
-  max-width: 100vw;
   display: flex;
   justify-content: space-between;
   .logo {

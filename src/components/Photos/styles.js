@@ -24,9 +24,9 @@ export const ImageWrap = styled.div`
   opacity: 0.8;
   border: solid 1px #b3aca7;
   img {
-    min-width: 100%;
+    ${'' /* min-width: 100%; */}
     min-height: 100%;
-    max-width: 150%;
+    max-width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -48,8 +48,8 @@ export const StyledPhotoModal = styled.div`
   z-index: 30;
   img {
     display: block;
-    max-width: 80vw;
-    max-height: 80vh;
+    max-width: 80%;
+    max-height: 80%;
     box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
     border: 1px solid white;
     position: absolute;

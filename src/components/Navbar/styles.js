@@ -36,7 +36,7 @@ export const Likeness = styled.span`
 export const Nav = styled.nav`
   width: 100%;
   height: 55px;
-  display: flex;
+  display: fixed;
   justify-content: space-between;
   .logo {
     padding-top: 20px;

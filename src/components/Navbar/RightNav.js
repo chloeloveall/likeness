@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyledIcon, Ul } from './styles';
+import { StyledIcon, Ul, StyledLink, StyledLink2 } from './styles';
 import { SignOut, User, House, PaperPlaneTilt } from "phosphor-react";
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -13,36 +13,44 @@ export default function RightNav({ open, setOpen }) {
         transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
       />
       <li>
-        <Link to='/home' open={open} onClick={() => setOpen(!open)}>
-          <StyledIcon>
+        <StyledLink to='/home' open={open} onClick={() => setOpen(!open)}>
+          {/* <StyledIcon>
             <House />
-          </StyledIcon>
+          </StyledIcon> */}
           Home
-        </Link>
+        </StyledLink>
       </li>
       <li>
-        <Link to='/contact' open={open} onClick={() => setOpen(!open)}>
-          <StyledIcon>
+        <StyledLink to='/about' open={open} onClick={() => setOpen(!open)}>
+          {/* <StyledIcon>
+            <House />
+          </StyledIcon> */}
+          About
+        </StyledLink>
+      </li>
+      <li>
+        <StyledLink to='/contact' open={open} onClick={() => setOpen(!open)}>
+          {/* <StyledIcon>
             <PaperPlaneTilt />
-          </StyledIcon>
-          Contact Us
-        </Link>
+          </StyledIcon> */}
+          Contact
+        </StyledLink>
       </li>
       <li>
-        <Link to='/account' open={open} onClick={() => setOpen(!open)}>
-          <StyledIcon>
+        <StyledLink to='/account' open={open} onClick={() => setOpen(!open)}>
+          {/* <StyledIcon>
             <User />
-          </StyledIcon>
+          </StyledIcon> */}
           Account
-        </Link>
+        </StyledLink>
       </li>
       <li>
-        <Link to='/' open={open} onClick={() => setOpen(!open)}>
+        <StyledLink2 to='/' open={open} onClick={() => setOpen(!open)}>
+          Sign Out
           <StyledIcon>
             <SignOut />
           </StyledIcon>
-          Sign Out
-        </Link>
+        </StyledLink2>
       </li>
     </Ul>
   );

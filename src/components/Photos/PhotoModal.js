@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { StyledPhotoModal, Button } from './styles';
-import { XCircle } from "phosphor-react";
+import { StyledPhotoModal } from './styles';
+// import { XCircle } from "phosphor-react";
 
 export default function Modal({ selectedImage, setSelectedImage }) {
   function handleClose(event) {

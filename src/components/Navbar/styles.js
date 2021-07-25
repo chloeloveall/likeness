@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 // global styles
 export const GlobalStyle = createGlobalStyle`
@@ -39,7 +40,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   .logo {
     padding-top: 20px;
-    ${'' /* z-index: 30; */}
+    z-index: 30;
   }
 `;
 
@@ -49,6 +50,7 @@ export const StyledBurger = styled.div`
   height: 2rem;
   position: relative;
   top: 25px;
+  margin-right: 0;
   z-index: 20;
   display: flex;
   justify-content: space-around;
@@ -80,9 +82,14 @@ export const Ul = styled.ul`
   list-style: none;
   flex-flow: row nowrap;
   li {
-    padding: 18px 10px;
-    margin-top: 50px;
-    padding-left: 10vw;
+    padding: 18px;
+    ${'' /* margin-top: 50px; */}
+    ${'' /* padding-left: 10vw; */}
+    margin: auto;
+    text-align: center;
+    display: flex;
+  justify-content: center;
+  align-items: center;
   }
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   flex-flow: column nowrap;
@@ -94,7 +101,7 @@ export const Ul = styled.ul`
   height: 100vh;
   width: 100vw;
   max-width: 100vw;
-  padding-top: 3.5rem;
+  padding-top: 4rem;
   transition: transform 0.3s ease-in-out;
   margin-top: 0px !important;
   ${'' /* li {
@@ -103,14 +110,14 @@ export const Ul = styled.ul`
   } */}
   .gradient {
     background-image:#DAE2f8;background-image:  
-    radial-gradient(at 24% 25%, hsla(224,68%,89%,1) 0, transparent 51%),  
-    radial-gradient(at 44% 35%, hsla(0,38%,68%,1) 0, transparent 46%),  
-    radial-gradient(at 66% 70%, hsla(224,69%,92%,1) 0, transparent 45%),  
-    radial-gradient(at 91% 70%, hsla(0,38%,75%,1) 0, transparent 45%),  
-    radial-gradient(at 93% 10%, hsla(217,100%,95%,1) 0, transparent 31%),  
-    radial-gradient(at 44% 81%, hsla(355,85%,93%,1) 0, transparent 50%),  
-    radial-gradient(at 80% 100%, hsla(224,69%,92%,1) 0, transparent 50%),  
-    radial-gradient(at 0% 0%, hsla(351,34%,93%,1) 0, transparent 50%);
+    radial-gradient(at 24% 25%, hsla(224,68%,89%,1) 0, 255, 255, 255, 0 51%),  
+    radial-gradient(at 44% 35%, hsla(0,38%,68%,1) 0, 255, 255, 255, 0 46%),  
+    radial-gradient(at 66% 70%, hsla(224,69%,92%,1) 0, 255, 255, 255, 0 45%),  
+    radial-gradient(at 91% 70%, hsla(0,38%,75%,1) 0, 255, 255, 255, 0 45%),  
+    radial-gradient(at 93% 10%, hsla(217,100%,95%,1) 0, 255, 255, 255, 0 31%),  
+    radial-gradient(at 44% 81%, hsla(355,85%,93%,1) 0, 255, 255, 255, 0 50%),  
+    radial-gradient(at 80% 100%, hsla(224,69%,92%,1) 0, 255, 255, 255, 0 50%),  
+    radial-gradient(at 0% 0%, hsla(351,34%,93%,1) 0, 255, 255, 255, 0 50%);
     height: 60vh;
     width: 60vh;
     margin: auto;
@@ -122,13 +129,46 @@ export const Ul = styled.ul`
     top: 20%;
     -ms-transform: translateY(-20%);
     transform: translateY(-20%);
-    left: 50%;
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    left: 30%;
+    -ms-transform: translateX(-30%);
+    transform: translateX(-30%);
   }
 `;
 
 export const StyledIcon = styled.i`
-  padding-right: 8px;
+  padding-left: 8px;
   vertical-align: middle;
+`;
+
+export const StyledLink = styled(Link)`
+  text-align: center;
+  font-size: 50px;
+  text-decoration: none;
+  color: #4e4e4e;
+  &:hover {
+    background-image: linear-gradient(to right, #D6A4A4 0%, #D6A4A4  51%, #D6A4A4  100%);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    transition: 0.5s;
+    background-size: 200% auto;
+  }
+`;
+
+export const StyledLink2 = styled(Link)`
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
+  color: #4e4e4e;
+  ${'' /* font-family: 'Monda', sans-serif; */}
+  &:hover {
+    background-image: linear-gradient(to right, #D6A4A4 0%, #D6A4A4  51%, #D6A4A4  100%);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    transition: 0.5s;
+    background-size: 200% auto;
+  }
 `;

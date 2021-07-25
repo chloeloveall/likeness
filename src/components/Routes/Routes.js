@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, useLocation } from 'react-router-dom';
 
 import Landing from '../Landing/Landing';
-import Home from '../Home/Home';
+// import Home from '../Home/Home';
 // import LoginForm from '../Auth/LoginForm';
 import Navbar from '../Navbar/Navbar';
 import { Container } from './styles';
@@ -19,7 +19,7 @@ export default function Routes() {
       <Route exact path='/' component={Landing} />
       <Container>
         {/* <Route path='/login' component={LoginForm} /> */}
-        <Route path='/home' component={Home} />
+        {/* <Route path='/home' component={Home} /> */}
         {/* <Route path='/about' component={About} /> */}
         {/* <Route path='/contact' component={Contact} /> */}
       </Container>

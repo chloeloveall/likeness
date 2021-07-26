@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import useFirebaseStorage from '../../hooks/useFirebaseStorage';
+import useFirebaseStorage from '../../firebase/useFirebaseStorage';
 import { motion } from 'framer-motion';
 import { StyledProgressBar } from './styles';
 

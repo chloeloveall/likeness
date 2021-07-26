@@ -7,7 +7,7 @@
 #### By _**Chloe Loveall**_
 <br>
 
-![license](https://img.shields.io/github/license/chloeloveall/likeness?color=blue&style=flat-square) &nbsp; ![top project language](https://img.shields.io/github/languages/top/chloeloveall/likeness?style=flat-square) &nbsp; ![last github commit](https://img.shields.io/github/last-commit/chloeloveall/likeness?style=flat-square) &nbsp; ![github pull requests](https://img.shields.io/github/issues-pr/chloeloveall/likeness?style=flat-square) &nbsp; ![open issues](https://img.shields.io/github/issues-raw/chloeloveall/likeness?style=flat-square) &nbsp; ![github contributors](https://img.shields.io/github/contributors/chloeloveall/likeness?color=brightgreen&style=flat-square) &nbsp; ![vercel deployment status](https://img.shields.io/github/deployments/chloeloveall/likeness/production?label=vercel&logo=vercel)
+![license](https://img.shields.io/github/license/chloeloveall/likeness?color=blue&style=flat-square) &nbsp; ![top project language](https://img.shields.io/github/languages/top/chloeloveall/likeness?style=flat-square) &nbsp; ![last github commit](https://img.shields.io/github/last-commit/chloeloveall/likeness?style=flat-square) &nbsp; ![github pull requests](https://img.shields.io/github/issues-pr/chloeloveall/likeness?style=flat-square) &nbsp; ![open issues](https://img.shields.io/github/issues-raw/chloeloveall/likeness?style=flat-square) &nbsp; ![github contributors](https://img.shields.io/github/contributors/chloeloveall/likeness?color=brightgreen&style=flat-square)
 
 ## Table of Contents
 

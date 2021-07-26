@@ -14,7 +14,7 @@ export default function Landing() {
           <Heading1 
             as={motion.h1} 
             initial={{  opacity: 0 }} 
-            animate={{ opacity: 1 }} t
+            animate={{ opacity: 1 }}
             transition={{ duration: 4 }}
           >
             Experience <Likeness as={motion.span} whileHover={{ backgroundImage: 'linear-gradient(to right, #D6A4A4 0%, #DAE2F8  51%, #D6A4A4  100%)', backgroundPosition: 'right center' }}>likeness</Likeness>
@@ -25,7 +25,7 @@ export default function Landing() {
               animate={{ opacity: 1 }} 
               transition={{ delay: 3, duration: 4 }}
             >
-              Dreamy aesthetics. </motion.span> <motion.span initial={{  opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 5, duration: 4 }}>Curated content.</motion.span>
+              Dreamy aesthetics. </motion.span> <motion.span initial={{  opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 5, duration: 4 }}>Community curated content.</motion.span>
           </Heading2>
           <motion.div 
             initial={{  opacity: 0 }} 

@@ -32,7 +32,6 @@ label{
   border-radius: 50%;
   margin: 10px auto;
   line-height: 30px;
-  color: var(--primary);
   font-weight: bold;
   font-size: 24px;
 }
@@ -41,6 +40,8 @@ label{
   height: 60px;
   font-size: 0.8rem;
   margin: 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .error {
   color: #ff4a4a;

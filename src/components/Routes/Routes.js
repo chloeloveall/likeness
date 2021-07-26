@@ -7,6 +7,8 @@ import Navbar from '../NavBar/Navbar';
 import { Container } from './styles';
 import Login from '../Auth/Login';
 import ForgotPassword from '../Auth/ForgotPassword';
+import Contact from '../Contact/Contact.js';
+import About from '../About/About.js';
 
 export default function Routes() {
   const location = useLocation();
@@ -21,6 +23,8 @@ export default function Routes() {
               <Route path='/home' component={Home} />
               <Route path='/login' component={Login} />
               <Route path='/forgot' component={ForgotPassword} />
+              <Route path='/contact' component={Contact} />
+              <Route path='/about' component={About} />
             </Container>
           </Switch>
     </>

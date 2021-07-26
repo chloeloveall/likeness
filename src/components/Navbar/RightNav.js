@@ -30,11 +30,6 @@ export default function RightNav({ open, setOpen }) {
         </StyledLink>
       </li>
       <li>
-        <StyledLink to='/account' open={open} onClick={() => setOpen(!open)}>
-          Account
-        </StyledLink>
-      </li>
-      <li>
         {user ? (
           <>
             <StyledLink2 to='/' open={open} onClick={() => {firebase.logout(); setOpen(!open)}}> Sign Out <StyledIcon><SignOut /></StyledIcon><br /> {user.displayName}</StyledLink2>

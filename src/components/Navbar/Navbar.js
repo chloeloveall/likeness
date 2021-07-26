@@ -9,7 +9,7 @@ export default function Navbar() {
     <>
       <GlobalStyle />
       <Nav>
-        <div className="logo">
+        <div className='logo'>
           <Heading1 as={Link} to='/home'>
             <Likeness 
               as={motion.span} 

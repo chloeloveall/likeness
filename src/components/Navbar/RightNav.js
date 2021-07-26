@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useContext } from "react";
 import { StyledIcon, Ul, StyledLink, StyledLink2 } from './styles';
-import { SignOut } from "phosphor-react";
-// import { Link } from 'react-router-dom';
+import { SignOut, SignIn } from "phosphor-react";
 import { motion } from 'framer-motion';
+import { FirebaseContext } from '../../firebase';
 
 export default function RightNav({ open, setOpen }) {
+  const { user, firebase } = useContext(FirebaseContext); 
+
   return (
     <Ul open={open}>
       <motion.div 
@@ -14,43 +16,36 @@ export default function RightNav({ open, setOpen }) {
       />
       <li>
         <StyledLink to='/home' open={open} onClick={() => setOpen(!open)}>
-          {/* <StyledIcon>
-            <House />
-          </StyledIcon> */}
           Home
         </StyledLink>
       </li>
       <li>
         <StyledLink to='/about' open={open} onClick={() => setOpen(!open)}>
-          {/* <StyledIcon>
-            <House />
-          </StyledIcon> */}
           About
         </StyledLink>
       </li>
       <li>
         <StyledLink to='/contact' open={open} onClick={() => setOpen(!open)}>
-          {/* <StyledIcon>
-            <PaperPlaneTilt />
-          </StyledIcon> */}
           Contact
         </StyledLink>
       </li>
       <li>
         <StyledLink to='/account' open={open} onClick={() => setOpen(!open)}>
-          {/* <StyledIcon>
-            <User />
-          </StyledIcon> */}
           Account
         </StyledLink>
       </li>
       <li>
-        <StyledLink2 to='/' open={open} onClick={() => setOpen(!open)}>
-          Sign Out
-          <StyledIcon>
-            <SignOut />
-          </StyledIcon>
-        </StyledLink2>
+        {user ? (
+          <>
+            <StyledLink2 to='/' open={open} onClick={() => {firebase.logout(); setOpen(!open)}}> Sign Out <StyledIcon><SignOut /></StyledIcon><br /> {user.displayName}</StyledLink2>
+          </>
+        ) : <StyledLink2 to='/login' open={open} onClick={() => setOpen(!open)}>
+            Sign In 
+            <StyledIcon>
+              <SignIn />
+            </StyledIcon>
+          </StyledLink2>
+        }
       </li>
     </Ul>
   );

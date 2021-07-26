@@ -105,10 +105,6 @@ export const Ul = styled.ul`
   padding-top: 4rem;
   transition: transform 0.3s ease-in-out;
   margin-top: 0px !important;
-  ${'' /* li {
-    &:hover{
-      background-image: linear-gradient(to left, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
-  } */}
   .gradient {
     background-image:#DAE2f8;background-image:  
     radial-gradient(at 24% 25%, hsla(224,68%,89%,1) 0, rgba(255, 255, 255, 0) 51%),  
@@ -146,7 +142,6 @@ export const StyledLink = styled(Link)`
   font-size: 50px;
   text-decoration: none;
   color: #4e4e4e;
-  ${'' /* font-family: 'Monda', sans-serif; */}
   &:hover {
     background-image: linear-gradient(to right, #D6A4A4 0%, #D6A4A4  51%, #D6A4A4  100%);
     background-repeat: repeat;
@@ -163,7 +158,6 @@ export const StyledLink2 = styled(Link)`
   font-size: 25px;
   text-decoration: none;
   color: #4e4e4e;
-  ${'' /* font-family: 'Monda', sans-serif; */}
   &:hover {
     background-image: linear-gradient(to right, #D6A4A4 0%, #D6A4A4  51%, #D6A4A4  100%);
     background-repeat: repeat;

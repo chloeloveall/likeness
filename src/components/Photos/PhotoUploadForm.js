@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProgressBar from './ProgressBar';
+import { UploadButton, UploadForm } from './styles';
 
 export default function PhotoUploadForm() {
   const [file, setFile] = useState(null);
@@ -20,16 +21,17 @@ export default function PhotoUploadForm() {
   }
 
   return (
-    <form>
+    <UploadForm>
+      <p>Contribute a photo to the community</p>
       <label>
         <input type='file' onChange={handlePhotoUpload} />
-        <span>+</span>
+        <UploadButton>Add Photo</UploadButton>
       </label>
       <div className='output'>
         {error && <div className='error'>{error}</div>}
         {file && <div>{file.name}</div>}
         {file && <ProgressBar file={file} setFile={setFile} />}
       </div>
-    </form>
+    </UploadForm>
   );
 };

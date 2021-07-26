@@ -78,9 +78,41 @@ export const Button = styled.button`
 `;
 
 // photo upload form styles
-// export const StyledProgressBar = styled.div`
-  
-// `;
+export const UploadForm = styled.form`
+  margin: 30px auto 10px;
+  text-align: center;
+  .output{
+    height: 60px;
+    font-size: 0.8rem;
+  }
+  .error{
+    color: var(--error);
+  }
+`;
+
+export const UploadButton = styled.span`
+  box-sizing: border-box;
+  background-image: linear-gradient(to right, #DAE2F8 0%, #D6A4A4  51%, #DAE2F8  100%);
+  text-decoration: none;
+  margin-left: 0;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 170px;
+  display: block;
+  width: 100%;
+  border: .5px solid #4e4e4e;
+  float: right;
+  &:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+`;
 
 // upload progress bar styles 
 export const StyledProgressBar = styled.div`
